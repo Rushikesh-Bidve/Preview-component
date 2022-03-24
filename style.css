@@ -1,0 +1,168 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  width: 300px;
+  margin: 50px auto;
+  background-color: hsl(216, 50%, 16%);
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.equilibrium-img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  position: relative;
+}
+
+.images-overlay {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.equilibrium-img:hover {
+  cursor: pointer;
+}
+
+.images-overlay:hover .icon-eye {
+  background-color: hsla(178, 100%, 50%, 0.2);
+  opacity: 1;
+}
+
+.icon-eye {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 12px;
+  /* opacity: 0.5; */
+}
+
+/* .equilibrium-img:hover {
+  background: url("images/icon-view.svg") no-repeat;
+} */
+
+.heading-1 {
+  font-weight: 600;
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 16px;
+}
+
+.heading-1:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+p {
+  font-weight: 300;
+  font-size: 14px;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 12px;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.ratings-1,
+.ratings-2 {
+  color: hsl(178, 100%, 50%);
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+}
+
+.ratings-2 {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  margin-bottom: 12px;
+}
+
+.avtar {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.author-name {
+  color: hsl(215, 51%, 70%);
+}
+
+.author-name span {
+  color: hsl(0, 0%, 100%);
+}
+
+.author-name span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 250px;
+  }
+}
